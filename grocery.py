@@ -37,6 +37,8 @@ class Solution:
         finalList = []
         list1 = str1.split(' ')
         list2 = str2.split(' ')
+        list1[len(list1)-1] = list1[len(list1)-1].strip()
+        list2[len(list2)-1] = list2[len(list2)-1].strip()
         for i in list1:
             if i not in finalList and i != '':
                 finalList.append(i)
