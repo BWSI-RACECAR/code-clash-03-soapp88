@@ -35,19 +35,16 @@ class Solution:
 
         # TODO: Write code below to return a list with the solution to the prompt
         finalList = []
-        str1.split(' ')
-        str2.split(' ')
-        for i in str1.split():
-            if (i in g):
-                pass
-            else:
-                g += i
-        
-        for i in str1.split():
-            if (i in g):
-                pass
-            else:
-                g += i
+        list1 = str1.split(' ')
+        list2 = str2.split(' ')
+        for i in list1:
+            if i not in finalList and i != '':
+                finalList.append(i)
+        for i in list2:
+            if i not in finalList and i != '':
+                finalList.append(i)
+        return finalList
+
 
 def main():
     string1 = input()
