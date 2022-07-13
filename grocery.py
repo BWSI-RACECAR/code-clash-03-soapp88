@@ -34,12 +34,20 @@ class Solution:
         # return: list
 
         # TODO: Write code below to return a list with the solution to the prompt
-        grocery = ''
-        for i in str1.split() + str2.split():
-            if (i in t):
+        finalList = []
+        str1.split(' ')
+        str2.split(' ')
+        for i in str1.split():
+            if (i in g):
                 pass
             else:
-                t += i
+                g += i
+        
+        for i in str1.split():
+            if (i in g):
+                pass
+            else:
+                g += i
 
 def main():
     string1 = input()
